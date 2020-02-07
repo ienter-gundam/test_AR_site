@@ -9,7 +9,7 @@
 
 <body style='margin: 0; overflow: hidden;'>
   <!-- シーンを追加 -->
-  <a-scene embedded arjs="debugUIEnabled:true;">
+  <a-scene embedded arjs="debugUIEnabled:false;">
 
     <!-- 3DCGモデルの読み込み -->
     <a-assets>
@@ -21,7 +21,8 @@
     <!--<a-marker type='pattern' url='asset/pattern-qr.patt'>-->
 
       <!-- 3DCGモデルの呼び出し -->
-      <a-gltf-model src="#vroid"></a-gltf-model>
+      <!--<a-gltf-model src="#vroid"></a-gltf-model>-->
+      <a-entity gltf-model="#vroid" scale="0.5 0.5 0.5"></a-entity>
 
     </a-marker>
 
