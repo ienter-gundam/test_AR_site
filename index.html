@@ -9,7 +9,7 @@
 
 <body style='margin: 0; overflow: hidden;'>
   <!-- シーンを追加 -->
-  <a-scene embedded arjs="debugUIEnabled:false;">
+  <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;">
 
     <!-- 3DCGモデルの読み込み -->
     <a-assets>
@@ -34,7 +34,7 @@
     </a-marker>
 
     <!-- カメラを追加 -->
-    <a-entity camera far="5000">
+    <a-entity camera far="2500">
     </a-entity>
   </a-scene>
 </body>
